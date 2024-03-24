@@ -27,7 +27,7 @@ const Login = () => {
         />
         {!isSignInForm && (
           <input
-            type="text"
+            type="password"
             placeholder="Full Name"
             className="p-4 my-4 w-full bg-gray-780"
           />
