@@ -1,39 +1,13 @@
-import './App.css';
+// import Body from "./components/Body";
 
-// function App() {
-//   return (
-//     <div className="text-3xl font-bold">
-//       Hello!!!
-//     </div>
-//   );
-// }
-
-import { useState } from 'react';
+import Body from "./components/Body";
 
 function App() {
   return (
     <div>
-      <h1>Counters that update separately</h1>
-      <MyButton />
+      <Body />
     </div>
   );
 }
-
-function MyButton() {
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count+10);
-  }
-
-  return (
-    <button onClick={handleClick}>
-      Clicked {count} times
-    </button>
-  );
-}
-
-
-
 
 export default App;
